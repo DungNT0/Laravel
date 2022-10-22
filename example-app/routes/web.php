@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user_form');
+Route::get('tinhtong', function () {
+    return view('sum');
 });
+Route::post('tinhtong','CongController@tinhtong');
