@@ -22,6 +22,11 @@
             </div>
 
             <div class="form-group">
+                <label for="">Age</label>
+                <input type="text" class="form-control" name="age">
+            </div>
+
+            <div class="form-group">
                 <label for="">Date</label>
                 <input type="text" class="form-control" name="date">
             </div>
