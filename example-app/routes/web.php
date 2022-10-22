@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CongController;
+use App\Http\Controllers\signupController;
 
 
 /*
@@ -19,7 +19,13 @@ use App\Http\Controllers\CongController;
 //     return view('welcome');
 // });
 
+// Route::get('/', function (){
+//     return view('sum');
+// });
+// Route::post('/',[CongController::class,'tinhtong']);
+
 Route::get('/', function (){
-    return view('sum');
+    return view('signup');
 });
-Route::post('/',[CongController::class,'tinhtong']);
+Route::get('/',[signupController::class,'index']);
+Route::post('/',[signupController::class,'displayInfo']);
