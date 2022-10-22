@@ -19,7 +19,7 @@ use App\Http\Controllers\CongController;
 //     return view('welcome');
 // });
 
-Route::get('tinhtong', function (){
+Route::get('/', function (){
     return view('sum');
 });
-Route::post('tinhtong',[CongController::class,'tinhtong']);
+Route::post('/',[CongController::class,'tinhtong']);
