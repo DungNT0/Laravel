@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CongController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('tinhtong', function () {
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('tinhtong', function (){
     return view('sum');
 });
-Route::post('tinhtong','CongController@tinhtong');
+Route::post('tinhtong',[CongController::class,'tinhtong']);
