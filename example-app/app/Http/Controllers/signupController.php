@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
+use Illuminate\Http\Requests;
+use App\Http\Requests\signupRequest;
 
 class signupController extends Controller
 {
@@ -20,6 +20,6 @@ class signupController extends Controller
             'web'=>$web=$request->input("web"),
             'address'=>$address=$request->input("address")
         ];
-        return view('signup')->with('user',$user);
+        return view('signup')->with('user', $user);
     }
 }

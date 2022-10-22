@@ -15,7 +15,7 @@
     </head>
     <body class="container">
         <form action='' style="width:600px;margin-left:50px;" class="form__box" method="post">
-            @crfs
+            @csrf
             <div class="form-group">
                 <label for="">Name</label>
                 <input type="text" class="form-control" name="name">

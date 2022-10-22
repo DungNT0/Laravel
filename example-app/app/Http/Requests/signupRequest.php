@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class signupRequets extends FormRequest
+class signupRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -16,11 +16,6 @@ class signupRequets extends FormRequest
         return true;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array<string, mixed>
-     */
     public function rules()
     {
         return [
