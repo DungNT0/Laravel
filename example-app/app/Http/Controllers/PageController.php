@@ -7,19 +7,19 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function getIndex(){
-        return view('page.trangchu');
+        return view('page.index');
     }
 
-    public function getLoaiSp(){
-        return view('page.loai_sanpham');
+    public function getProTy(){
+        return view('page.product_type');
     }
 
-    public function getChitiet(){
-        return view('page.chitiet_sanpham');
+    public function getProDe(){
+        return view('page.product_details');
     }
 
-    public function getLienhe(){
-        return view('page.lienhe');
+    public function getContact(){
+        return view('page.contact');
     }
 
     public function getAbout(){
