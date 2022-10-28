@@ -57,7 +57,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -75,7 +75,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -93,7 +93,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -123,7 +123,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -141,7 +141,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -159,7 +159,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
