@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\signupController;
+use App\Http\Controllers\PageController;
+
 
 
 /*
@@ -24,8 +26,10 @@ use App\Http\Controllers\signupController;
 // });
 // Route::post('/',[CongController::class,'tinhtong']);
 
-Route::get('/', function (){
-    return view('signup');
-});
-Route::get('/',[signupController::class,'index']);
-Route::post('/',[signupController::class,'displayInfo']);
+// Route::get('/', function (){
+//     return view('signup');
+// });
+// Route::get('/',[signupController::class,'index']);
+// Route::post('/',[signupController::class,'displayInfo']);
+
+Route::get('/index',[PageController::class,'getIndex']);
