@@ -34,7 +34,7 @@ use App\Http\Controllers\PageController;
 
 // Route::get('/index',[PageController::class,'getIndex']);
 Route::get('/',[PageController::class, 'getIndex']);
-Route::get('/loai_sanpham',[PageController::class, 'getLoaiSp']);
-Route::get('/chitiet_sanpham',[PageController::class, 'getChitiet']);
-Route::get('/lienhe',[PageController::class, 'getLienhe']);
+Route::get('/product_type',[PageController::class, 'getLoaiSp']);
+Route::get('/product_details',[PageController::class, 'getChitiet']);
+Route::get('/contact',[PageController::class, 'getLienhe']);
 Route::get('/about',[PageController::class, 'getAbout']);
