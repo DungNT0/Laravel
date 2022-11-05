@@ -7,7 +7,7 @@
         </div>
         <div class="pull-right">
             <div class="beta-breadcrumb font-large">
-                <a href="index.blade.php">Home</a> / <span>Giới thiệu</span>
+                <a href="/">Home</a> / <span>Giới thiệu</span>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -34,7 +34,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="assets/dest/images/history.jpg" alt="">
+                                <img src="source/assets/dest/images/history.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Birth.</h5>
@@ -58,7 +58,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="assets/dest/images/history.jpg" alt="">
+                                <img src="source/assets/dest/images/history.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Web Design</h5>
@@ -82,7 +82,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="assets/dest/images/history.jpg" alt="">
+                                <img src="source/assets/dest/images/history.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Web Development</h5>
@@ -106,7 +106,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="assets/dest/images/history.jpg" alt="">
+                                <img src="source/assets/dest/images/history.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Photoshop</h5>
@@ -130,7 +130,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="assets/dest/images/history.jpg" alt="">
+                                <img src="source/assets/dest/images/history.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Skill</h5>
@@ -154,7 +154,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="assets/dest/images/history.jpg" alt="">
+                                <img src="source/assets/dest/images/history.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Project.</h5>
@@ -178,7 +178,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="assets/dest/images/history.jpg" alt="">
+                                <img src="source/assets/dest/images/history.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Coffe</h5>
@@ -261,7 +261,7 @@
             <div class="col-sm-6 wow fadeInLeft">
                 <div class="beta-person media">
 
-                    <img class="pull-left" src="assets/dest/images/person2.jpg" alt="">
+                    <img class="pull-left" src="source/assets/dest/images/person2.jpg" alt="">
 
                     <div class="media-body beta-person-body">
                         <h5>Bob Robertson</h5>
@@ -277,7 +277,7 @@
             <div class="col-sm-6 wow fadeInRight">
                 <div class="beta-person media ">
 
-                    <img class="pull-left" src="assets/dest/images/person3.jpg" alt="">
+                    <img class="pull-left" src="source/assets/dest/images/person3.jpg" alt="">
 
                     <div class="media-body beta-person-body">
                         <h5>Mike Greenwood</h5>
@@ -302,7 +302,7 @@
             <div class="col-sm-3">
                 <div class="beta-person beta-person-full">
                     <div class="bets-img-hover">
-                        <img src="assets/dest/images/person1.jpg" alt="">
+                        <img src="source/assets/dest/images/person1.jpg" alt="">
                     </div>
                     <div class="beta-person-body">
                         <h5>Mark Priston</h5>
@@ -316,7 +316,7 @@
             <div class="col-sm-3">
                 <div class="beta-person beta-person-full">
                     <div class="bets-img-hover">
-                        <img src="assets/dest/images/person2.jpg" alt="">
+                        <img src="source/assets/dest/images/person2.jpg" alt="">
                     </div>
                     <div class="beta-person-body">
                         <h5>Bob Robertson</h5>
@@ -330,7 +330,7 @@
             <div class="col-sm-3">
                 <div class="beta-person beta-person-full">
                     <div class="bets-img-hover">
-                        <img src="assets/dest/images/person3.jpg" alt="">
+                        <img src="source/assets/dest/images/person3.jpg" alt="">
                     </div>
                     <div class="beta-person-body">
                         <h5>Mike Greenwood</h5>
@@ -344,7 +344,7 @@
             <div class="col-sm-3">
                 <div class="beta-person beta-person-full">
                     <div class="bets-img-hover">
-                        <img src="assets/dest/images/person4.jpg" alt="">
+                        <img src="source/assets/dest/images/person4.jpg" alt="">
                     </div>
                     <div class="beta-person-body">
                         <h5>David Black</h5>

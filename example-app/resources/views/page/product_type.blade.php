@@ -7,7 +7,7 @@
         </div>
         <div class="pull-right">
             <div class="beta-breadcrumb font-large">
-                <a href="index.blade.php">Home</a> / <span>Sản phẩm</span>
+                <a href="/">Home</a> / <span>Sản phẩm</span>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -57,7 +57,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="/product_details"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="single-item-caption">
                                         <a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="beta-btn primary" href="/product_details">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="/product_details"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -85,7 +85,7 @@
                                     </div>
                                     <div class="single-item-caption">
                                         <a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="beta-btn primary" href="/product_details">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="/product_details"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -103,7 +103,7 @@
                                     </div>
                                     <div class="single-item-caption">
                                         <a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="beta-btn primary" href="/product_details">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="/product_details"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -133,7 +133,7 @@
                                     </div>
                                     <div class="single-item-caption">
                                         <a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="beta-btn primary" href="/product_details">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="/product_details"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -151,7 +151,7 @@
                                     </div>
                                     <div class="single-item-caption">
                                         <a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="beta-btn primary" href="/product_details">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
@@ -159,7 +159,7 @@
                             <div class="col-sm-4">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="assets/dest/images/products/1.jpg" alt=""></a>
+                                        <a href="/product_details"><img src="source/assets/dest/images/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">Sample Woman Top</p>
@@ -169,7 +169,7 @@
                                     </div>
                                     <div class="single-item-caption">
                                         <a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="beta-btn primary" href="/product_details">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
