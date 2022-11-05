@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\Models\Products;
-use App\Models\Type_Products;
+use App\Models\Type_products;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,9 +25,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer('header', function($view) {
-            $product_type = Type_Products::all();
-            $view->with('product_type', $product_type);
+        view()->composer('page.header', function($view) {
+            $product_types = Type_Products::all();
+            $view->with('product_types', $product_types);
         });
 
         view()->composer('page.product_type', function($view) {

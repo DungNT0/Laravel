@@ -62,11 +62,11 @@
 						<div class="beta-products-list">
 							<h4>Top Products</h4>
 							<div class="beta-products-details">
-								<p class="pull-left">{{count($suggestion)}} products found</p>
+								<p class="pull-left">{{count($other_product)}} products found</p>
 								<div class="clearfix"></div>
 							</div>
 							<div class="row">
-                                @foreach ($suggestion as $item)
+                                @foreach ($other_product as $item)
 								<div class="col-sm-4">
 									<div class="single-item">
 										<div class="single-item-header">

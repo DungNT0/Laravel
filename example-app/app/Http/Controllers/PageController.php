@@ -18,13 +18,16 @@ class PageController extends Controller
     }
 
     public function getProTy($type){
-        $type_name = Type_Products::where('id',$type)->first();
-        $types = Type_Products::all();
-        $type_product = Products::all();
-        $product_filter = Products::where('id_type',$type)->get();
-        $suggestion = Products::where('id_type', '<>', $type)->take(3)->get();
-        return view('page.product_type', compact( 'type_name','types','type_product', 'product_filter', 'suggestion'));
-        // return view('page.product_type');
+        $type_product = Type_Products::all();
+
+        $product_filter  = Products::where('id_type', $type)->get();
+
+        $other_product = Products::where('id_type', '<>', $type)->paginate(3);
+
+        $product_types = Type_Products::where('id', $type)->first();
+
+        return view('page.product_type', compact('type_product', 'product_filter ', 'other_product', 'product_types'));
+
     }
 
     public function getProDe(){

@@ -93,7 +93,7 @@
 						<li><a href="/">Trang chủ</a></li>
 						<li><a href="#">Sản phẩm</a>
 							<ul class="sub-menu">
-                                @foreach ($product_type as $pt)
+                                @foreach ($product_types as $pt)
                                     <li><a href="/type/{{$pt->id}}">{{$pt->name}}</a></li>
                                 @endforeach
 							</ul>
