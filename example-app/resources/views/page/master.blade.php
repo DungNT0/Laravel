@@ -4,27 +4,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Laravel </title>
-	<link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
+    {{-- @push('styles') --}}
+    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="source/assets/dest/css/font-awesome.min.css">
-	<link rel="stylesheet" href="source/assets/dest/vendors/colorbox/example3/colorbox.css">
-	<link rel="stylesheet" href="source/assets/dest/rs-plugin/css/settings.css">
-	<link rel="stylesheet" href="source/assets/dest/rs-plugin/css/responsive.css">
-	<link rel="stylesheet" title="style" href="source/assets/dest/css/style.css">
-	<link rel="stylesheet" href="source/assets/dest/css/animate.css">
-	<link rel="stylesheet" title="style" href="source/assets/dest/css/huong-style.css">
+	<link rel="stylesheet" href="{{asset('source/assets/dest/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{asset('source/assets/dest/vendors/colorbox/example3/colorbox.css')}}">
+	<link rel="stylesheet" href="{{asset('source/assets/dest/rs-plugin/css/settings.css')}}">
+	<link rel="stylesheet" href="{{asset('source/assets/dest/rs-plugin/css/responsive.css')}}">
+	<link rel="stylesheet" title="style" href="{{asset('source/assets/dest/css/style.css')}}">
+	<link rel="stylesheet" href="{{asset('source/assets/dest/css/animate.css')}}">
+	<link rel="stylesheet" title="style" href="{{asset('source/assets/dest/css/huong-style.css')}}">
+    {{-- @endpush --}}
+
 </head>
 <body>
 
-    @include('page/header')
-	<!-- <div class="rev-slider"> -->
-	@yield('content')
+	@include('page/header')
 
-    @include('page/footer')
-
-
-	<!-- include js files -->
-    @include('page/script')
+	<div class="rev-slider">
+        @yield('content')
+	</div> <!-- .container -->
+    
+	@include('page/footer')
+    
+	@include('page/script')
 </body>
 </html>
