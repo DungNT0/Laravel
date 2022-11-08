@@ -3,11 +3,11 @@
 <div class="inner-header">
 		<div class="container">
 			<div class="pull-left">
-				<h6 class="inner-title">Sản phẩm {{$type_name->name}}</h6>
+				<h6 class="inner-title">Sản phẩm</h6>
 			</div>
 			<div class="pull-right">
 				<div class="beta-breadcrumb font-large">
-					<a href="index.html">Home</a> / <span>Sản phẩm</span>
+					<a href="/">Home</a> / <span>Sản phẩm</span>
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -20,7 +20,7 @@
 				<div class="row">
 					<div class="col-sm-3">
 						<ul class="aside-menu">
-                            @foreach ($types as $t)
+                            @foreach ($type_product as $t)
                                 <li><a href="/type/{{$t->id}}"></a>{{$t->name}}</li>
                             @endforeach
 						</ul>

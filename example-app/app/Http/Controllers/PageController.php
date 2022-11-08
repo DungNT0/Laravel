@@ -20,13 +20,13 @@ class PageController extends Controller
     public function getProTy($type){
         $type_product = Type_Products::all();
 
-        $product_filter  = Products::where('id_type', $type)->get();
+        $product_filter = Products::where('id_type', $type)->get();
 
         $other_product = Products::where('id_type', '<>', $type)->paginate(3);
 
         $product_types = Type_Products::where('id', $type)->first();
 
-        return view('page.product_type', compact('type_product', 'product_filter ', 'other_product', 'product_types'));
+        return view('page.product_type', compact('type_product', 'product_filter', 'other_product', 'product_types'));
 
     }
 
