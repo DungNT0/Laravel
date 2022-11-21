@@ -42,13 +42,18 @@
 										</div>
 										<div class="single-item-body">
 											<p class="single-item-title">{{$pf->name}}</p>
-											<p class="single-item-price">
-												<span>{{$pf->unit_price}}</span>
+											<p class="single-item-price" style="text-align:left;font-size: 15px;">
+												@if($pf->promotion_price==0)
+												<span class="flash-sale">{{number_format($pf->unit_price)}} Đồng</span>
+												@else
+												<span class="flash-del">{{number_format($pf->unit_price)}} Đồng </span>
+												<span class="flash-sale">{{number_format($pf->promotion_price)}} Đồng</span>
+												@endif
 											</p>
-										</div>
+                                    	</div>
 										<div class="single-item-caption">
-											<a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-											<a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+											<a class="add-to-cart pull-left" href="{{route('themgiohang', $pf->id)}}"><i class="fa fa-shopping-cart"></i></a>
+											<a class="beta-btn primary" href="/product_type/{{$pf->id}}">Details <i class="fa fa-chevron-right"></i></a>
 											<div class="clearfix"></div>
 										</div>
 									</div>

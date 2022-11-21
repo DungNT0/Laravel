@@ -20,12 +20,12 @@
 
 	@include('page/header')
 
-	<div class="rev-slider">
-        @yield('content')
-	</div> <!-- .container -->
+	<div class="rev-slider">@yield('content')</div>
+
     
 	@include('page/footer')
     
+	<!-- include js files -->
 	@include('page/script')
 </body>
 </html>

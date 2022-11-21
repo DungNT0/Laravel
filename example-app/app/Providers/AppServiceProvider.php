@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Session;
+use App\Models\Cart;
 use App\Models\Products;
 use App\Models\Type_products;
 
@@ -28,6 +30,17 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('page.header', function($view) {
             $product_types = Type_Products::all();
             $view->with('product_types', $product_types);
+        });
+
+        view()->composer('page.header', function($view) {
+            if (Session('cart')) {
+                $oldCart = Session::get('cart');
+                $cart = new Cart($oldCart);
+                $view->with(['cart' => Session::get('cart'),
+                                        'product_cart' => $cart->items, 
+                                        'totalPrice' => $cart->totalPrice, 
+                                        'totalQty' => $cart->totalQty]);
+            }
         });
 
         view()->composer('page.product_type', function($view) {

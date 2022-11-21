@@ -38,3 +38,6 @@ Route::get('/type/{id}',[PageController::class, 'getProTy']);
 Route::get('/product_details',[PageController::class, 'getProDe']);
 Route::get('/contact',[PageController::class, 'getContact']);
 Route::get('/about',[PageController::class, 'getAbout']);
+
+Route::get('add-to-cart/{id}',[PageController::class, 'getAddToCart'])->name('themgiohang');
+Route::get('del-cart/{id}',[PageController::class, 'getDelItemCart'])->name('xoagiohang');
