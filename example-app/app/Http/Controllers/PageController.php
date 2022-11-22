@@ -38,10 +38,10 @@ class PageController extends Controller
     }
 
     public function getAddToCart(Request $req, $id){
-        $products = Products::find($id);
+        $product = Products::find($id);
         $oldCart = Session('cart')?Session::get('cart'):null;
         $cart = new Cart($oldCart);
-        $cart->add($products,$id);
+        $cart->add($product, $id);
         $req->session()->put('cart', $cart);
         return redirect()->back(); 
     }

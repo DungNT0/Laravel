@@ -43,15 +43,15 @@
 								)
 							<i class="fa fa-chevron-down"></i></div>
 							<div class="beta-dropdown cart-body">
-								@foreach($product_cart as $products)
-								<div class="cart-item" id="cart-item{{$products['item']['id']}}">
-									<a class="cart-item-delete" href="{{route('xoagiohang', $products['item']['id'])}}"><i class="fa fa-times"></i></a>
+								@foreach($product_cart as $product)
+								<div class="cart-item" id="cart-item{{$product['item']['id']}}">
+									<a class="cart-item-delete" href="{{route('xoagiohang', $product['item']['id'])}}"><i class="fa fa-times"></i></a>
 									<div class="media">
-										<a class="pull-left" value="{{$products['item']['id']}}" soluong= "{{$products['qty']}}" ><img src="{{asset('source/image/product/cart/'.$products['item']['image'])}}" alt=""></a>
+										<a class="pull-left" value="{{$product['item']['id']}}" soluong= "{{$product['qty']}}" ><img src="{{asset('source/image/product/cart/'.$product['item']['image'])}}" alt=""></a>
 										<div class="media-body">
-											<span class="cart-item-title">{{$products['item']['name']}}</span>
+											<span class="cart-item-title">{{$product['item']['name']}}</span>
 											<span class="cart-item-options">Size: XS; Colar: Navy</span>
-											<span class="cart-item-amount">{{$products['qty']}}<span>{{$products['item']['unit_price']}}</span></span>
+											<span class="cart-item-amount">{{$product['qty']}}<span>{{$product['item']['unit_price']}}</span></span>
 										</div>
 									</div>
 								</div>
