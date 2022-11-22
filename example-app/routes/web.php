@@ -41,3 +41,9 @@ Route::get('/about',[PageController::class, 'getAbout']);
 
 Route::get('add-to-cart/{id}',[PageController::class, 'getAddToCart'])->name('themgiohang');
 Route::get('del-cart/{id}',[PageController::class, 'getDelItemCart'])->name('xoagiohang');
+Route::get('/admin', [PageController::class, 'getIndexAdmin']);
+Route::get('/admin-add-form', [PageController::class, 'getAdminAdd'])->name('add-product');	
+Route::post('/admin-add-form', [PageController::class, 'postAdminAdd']);	
+Route::get('/admin-edit-form/{id}', [PageController::class, 'getAdminEdit']);	
+Route::get('/admin-edit', [PageController::class, 'postAdminEdit']);	
+Route::post('/admin-delete/{id}', [PageController::class, 'postAdminDelete']);

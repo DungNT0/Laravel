@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Session;
 use App\Models\Slide;
 use App\Models\Products;
 use App\Models\Type_Products;
+use App\Models\BillDetail;
 use App\Models\Cart;
 
 
@@ -37,10 +38,10 @@ class PageController extends Controller
     }
 
     public function getAddToCart(Request $req, $id){
-        $product = Products::find($id);
+        $products = Products::find($id);
         $oldCart = Session('cart')?Session::get('cart'):null;
         $cart = new Cart($oldCart);
-        $cart->add($product,$id);
+        $cart->add($products,$id);
         $req->session()->put('cart', $cart);
         return redirect()->back(); 
     }
@@ -64,5 +65,79 @@ class PageController extends Controller
 
     public function getAbout(){
         return view('page.about');
+    }
+
+    public function getIndexAdmin() {
+        $products = Products::all();
+        return view('page.admin')->with(['products' => $products, 'sumSold' => count(BillDetail::all())]);														
+    }
+
+    public function getAdminAdd() {
+        return view('page.formAdd');						
+    }
+
+    public function postAdminAdd(Request $request){
+        $products = new Products();
+        if($request -> hasFile('inputImage')){
+            $file = $request -> file('inputImage');
+            $fileName = $file -> getClientOriginalName('inputImage');
+            $file -> move('source/image/product', $fileName);
+        }
+
+        $file_name = null;
+
+        if($request->file('inputImage') != null){
+            $file_name = $request -> file('inputImage')->getClientOriginalName();
+        }
+
+        $products->name = $request -> inputName;
+        $products->image = $file_name;
+        $products->description = $request -> inputDescription;
+        $products->unit_price = $request -> inputPrice;
+        $products->promotion_price = $request -> inputPromotionPrice;
+        $products->unit = $request -> inputUnit;
+        $products->new = $request -> inputNew;
+        $products->id_type = $request -> inputType;
+
+        $products->save();
+        return $this->getIndexAdmin();
+    }
+
+    public function getAdminEdit($id){
+        $products = Products::find($id);
+        return view('page.formEdit')->with('products', $products);
+    }
+
+    public function postAdminEdit(Request $request){
+
+        $id = $request->editId;
+
+        $products = new Products($id);
+        if($request -> hasFile('editImage')){
+            $file = $request -> file('editImage');
+            $fileName = $file -> getClientOriginalName('editImage');
+            $file -> move('source/image/product', $fileName);
+        }
+
+        if($request->file('editImage') != null){
+            $products->image = $fileName;
+        }
+
+        $products->name = $request -> editName;
+        $products->description = $request -> editDescription;
+        $products->unit_price = $request -> editPrice;
+        $products->promotion_price = $request -> editPromotionPrice;
+        $products->unit = $request -> editUnit;
+        $products->new = $request -> editNew;
+        $products->id_type = $request -> editType;
+
+        $products->save();
+        return $this->getIndexAdmin();
+    }
+
+    public function postAdminDelete($id){
+        $products = Products::find($id);
+        $products->delete();
+        return $this->getIndexAdmin();
     }
 }
