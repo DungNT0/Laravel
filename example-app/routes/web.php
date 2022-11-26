@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\signupController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\UserController;
+
 
 
 
@@ -47,3 +49,14 @@ Route::post('/admin-add-form', [PageController::class, 'postAdminAdd']);
 Route::get('/admin-edit-form/{id}', [PageController::class, 'getAdminEdit']);	
 Route::get('/admin-edit', [PageController::class, 'postAdminEdit']);	
 Route::post('/admin-delete/{id}', [PageController::class, 'postAdminDelete']);
+
+Route::get('/register', function () { 
+    return view('users.register');
+});				
+Route::post('/register', [UserController::class, 'Register']);
+
+Route::get('/login', function(){
+    return view('users.login');
+});
+Route::post('/login', [UserController::class, 'Login']);
+Route::get('/logout', [UserController::class, 'Logout']);
